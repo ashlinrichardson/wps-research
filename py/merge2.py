@@ -27,7 +27,7 @@ for L in lines:
                            '-t_srs EPSG:' + str(EPSG),
                            L,
                            'resample' + sep + L])]
-parfor(run, cmds, 2)
+parfor(run, cmds, 8)
 
 run(' '.join(['gdalbuildvrt',
               '-srcnodata nan',
