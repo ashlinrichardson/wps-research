@@ -39,7 +39,7 @@ run(' '.join(['gdalbuildvrt',
 
 if not exists('merge.bin'):
 	run(' '.join(['gdalwarp',
-                  '-wo NUM_THREADS=2',
+                  '-wo NUM_THREADS=16',
                   '-multi',
                   '-overwrite',
                   '-r bilinear',
